@@ -24,7 +24,7 @@ class TotalFragment : Fragment() {
 
         binding.textViewPrimerPlat.setText(SharedViewModel.obtenirNom("primerPlat") + " - " + SharedViewModel.obtenirTotal("primerPlat").toString() + "€")
         binding.textViewBeguda.setText(SharedViewModel.obtenirNom("beguda") + " - " + SharedViewModel.obtenirTotal("beguda").toString() + "€")
-        binding.textViewTotal.setText("Total: " + (SharedViewModel.obtenirTotal("primerPlat") + SharedViewModel.obtenirTotal("beguda")))
+        binding.textViewTotal.setText("Total: " + (SharedViewModel.obtenirTotal("primerPlat") + SharedViewModel.obtenirTotal("beguda")) + "€")
 
         return binding.root
 
