@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
 
-    companion object {
         private var _menu = MutableLiveData<List<MenuModel>>()
         val menu: LiveData<List<MenuModel>> = _menu
 
@@ -42,5 +41,4 @@ class SharedViewModel : ViewModel() {
                 return _menu.value?.get(0)?.nom
             }
         }
-    }
 }
